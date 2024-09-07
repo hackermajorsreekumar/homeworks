@@ -21,7 +21,7 @@ int main() {
   cout<<"Welcome to the fortune teller program!\n"<<endl;
   cout<<"Please enter your name"<< endl;
   cin >>name;
-  cout<<"Please enter the time of year when you were born: \n(pick from 'spring', 'summer', 'autumn', 'winter')\n"<<endl;
+  cout<<"Please enter the time of year when you were born: \n(pick from 'spring', 'summer', 'autumn', 'winter')"<<endl;
   cin>>season;
   cout<<"Please enter an adjective\n";
   cin>>adjective_one;
