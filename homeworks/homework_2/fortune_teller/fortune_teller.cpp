@@ -31,6 +31,6 @@ int main() {
   adjectives.emplace_back(adjective_two);
   cout<<endl;
   cout<<"Here is your description:"<<endl;
-  cout << name <<", the "<< adjectives[name.size() % adjectives.size()]<<" "<< role.at(season) <<" that " << ending[adjective_two.size() % ending.size()] <<endl;
+  cout << name <<", the "<< adjectives[name.size() % adjectives.size()]<<" "<< role.at(season) <<" that " << ending[name.size() % ending.size()] <<endl;
   return 0;
 }
