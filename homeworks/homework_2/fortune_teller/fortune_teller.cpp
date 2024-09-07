@@ -19,14 +19,14 @@ int main() {
   array ending{"eats UB for breakfast","finds errors quicker than the compiler","is not afraid of C++ error messages"};
   map <std::string,std::string> role {{"spring","STL guru"},{"summer","C++ expert"},{"autumn","coding beast"},{"winter","software design hero"}};
   cout<<"Welcome to the fortune teller program!\n"<<endl;
-  cout<<"Please enter your name \n"<< endl;
+  cout<<"Please enter your name"<< endl;
   cin >>name;
   cout<<"Please enter the time of year when you were born: \n(pick from 'spring', 'summer', 'autumn', 'winter')\n"<<endl;
   cin>>season;
-  cout<<"please enter an adjective\n";
+  cout<<"Please enter an adjective\n";
   cin>>adjective_one;
   adjectives.emplace_back(adjective_one);
-  cout<<"Please enter another adjective:\n"<<endl;
+  cout<<"Please enter another adjective:"<<endl;
   cin>>adjective_two;
   adjectives.emplace_back(adjective_two);
   
