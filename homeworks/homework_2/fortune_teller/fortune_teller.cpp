@@ -18,19 +18,19 @@ int main() {
   vector<std::string> adjectives{};
   array ending{"eats UB for breakfast","finds errors quicker than the compiler","is not afraid of C++ error messages"};
   map <std::string,std::string> role {{"spring","STL guru"},{"summer","C++ expert"},{"autumn","coding beast"},{"winter","software design hero"}};
-  cout<<"Welcome to the fortune teller program!\n"<<endl;
+  cout<<"Welcome to the fortune teller program!"<<endl;
   cout<<"Please enter your name:"<< endl;
   cin >>name;
   cout<<"Please enter the time of year when you were born:\n(pick from 'spring', 'summer', 'autumn', 'winter')"<<endl;
   cin>>season;
-  cout<<"Please enter an adjective:";
+  cout<<"Please enter an adjective:"<<endl;
   cin>>adjective_one;
   adjectives.emplace_back(adjective_one);
   cout<<"Please enter another adjective:"<<endl;
   cin>>adjective_two;
   adjectives.emplace_back(adjective_two);
-  
-  cout<<"Here is your description:\n"<<endl;
+  cout<<endl;
+  cout<<"Here is your description:"<<endl;
   cout << name <<", the "<< adjectives[name.size() % adjectives.size()]<<" "<< role.at(season) <<" that " << ending[adjective_two.size() % ending.size()] <<endl;
   return 0;
 }
