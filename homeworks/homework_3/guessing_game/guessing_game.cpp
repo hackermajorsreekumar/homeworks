@@ -28,7 +28,7 @@ int main() {
   //cout<<random_number<<endl;
   
   cout<<"I've generated a number. Try to guess it!"<<endl;
-  cout<<"Please provide the next guess:\t";
+  cout<<"Please provide the next guess: ";
   cin>>guess;
   
   while (guess != random_number) {
@@ -48,7 +48,7 @@ int main() {
   
   
  
- cout<<"You've done it! You guessed the number "<<random_number<<" in "<<count<<" guesses!";
+ cout<<"You've done it! You guessed the number "<<random_number<<" in "<<count<<" guesses!"<<endl;
  
   return 0;
 }
