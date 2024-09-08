@@ -10,15 +10,15 @@ using std::cin;
 int main() {
  
   
-  int smallest_number,largest_number,guess{0};
-  int count{0},random_number{0};
+  int smallest_number,largest_number,guess{};
+  int count{1},random_number{0};
   
  
  
   cout<<"Welcome to the GUESSING GAME!\nI will generate a number and you will guess it!"<<endl;
   cout<<"Please provide the smallest number:"<< endl;
   cin >>smallest_number;
-  cout<<"Please provide the largest number number:"<< endl;
+  cout<<"Please provide the largest number:"<< endl;
   cin >>largest_number;
   std::random_device random_device;
   std::mt19937 random_engine{random_device()};
@@ -27,8 +27,9 @@ int main() {
   
   //cout<<random_number<<endl;
   
-  cout<<"I've generated a number.Try to guess it!"<<endl;
-  
+  cout<<"I've generated a number. Try to guess it!"<<endl;
+  cout<<"Please provide the next guess:\t";
+  cin>>guess;
   
   while (guess != random_number) {
       cout<<"Please provide the next guess:\t";
