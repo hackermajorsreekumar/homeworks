@@ -28,11 +28,11 @@ int main() {
   //cout<<random_number<<endl;
   
   cout<<"I've generated a number. Try to guess it!"<<endl;
-  cout<<"Please provide the next guess:\t";
+  cout<<"Please provide the next guess:\t\n";
   cin>>guess;
   
   while (guess != random_number) {
-      cout<<"Please provide the next guess:\t\n";
+      cout<<"Please provide the next guess:\t";
       cin>>guess;
       if (guess > random_number) {
         cout<<"Your number is too big. Try again!";
