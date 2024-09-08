@@ -10,7 +10,7 @@ using std::cin;
 int main() {
  
   
-  int smallest_number,largest_number,guess{};
+  int smallest_number,largest_number,guess{0};
   int count{1},random_number{0};
   
  
@@ -24,12 +24,10 @@ int main() {
   std::mt19937 random_engine{random_device()};
   std::uniform_int_distribution distribution{smallest_number,largest_number};
   random_number = distribution(random_engine);
-  
-  //cout<<random_number<<endl;
+
   
   cout<<"I've generated a number. Try to guess it!"<<endl;
-  cout<<"Please provide the next guess: ";
-  cin>>guess;
+ 
   
   while (guess != random_number) {
       cout<<"Please provide the next guess:\t";
@@ -37,9 +35,12 @@ int main() {
       if (guess > random_number) {
         cout<<"Your number is too big. Try again!";
         }
-      else  {
+      else if (guess < random_number)  {
         cout<<"Your number is too small. Try again!";
         }
+      else {
+        break;
+      }
         
      count+=1;
      cout<<endl;
