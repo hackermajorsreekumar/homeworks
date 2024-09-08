@@ -32,7 +32,7 @@ int main() {
   cin>>guess;
   
   while (guess != random_number) {
-      cout<<"Please provide the next guess:\t";
+      cout<<"Please provide the next guess:\t\n";
       cin>>guess;
       if (guess > random_number) {
         cout<<"Your number is too big. Try again!";
