@@ -48,7 +48,7 @@ int main() {
   
   
  
- cout<<"You've done it! You guessed the number "<<random_number<<" in "<<count<<" guesses!"<<endl;
+ cout<<"You've done it! You guessed the number "<<random_number<<" in "<<count<<" guesses!";
  
   return 0;
 }
